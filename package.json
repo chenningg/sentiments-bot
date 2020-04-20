@@ -12,9 +12,7 @@
   "dependencies": {
     "concurrently": "^5.1.0"
   },
-  "devDependencies": {
-    "prettier": "2.0.4"
-  },
+  "devDependencies": {},
   "version": "1.0.0",
   "description": "An NLP bot that takes in a stock name and scrapes verified tweets to determine market sentimnet on that stock.",
   "main": "index.js",
