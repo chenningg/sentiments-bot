@@ -3,7 +3,7 @@
 
 ## Install and Setup
 
-1. Make sure you have [Yarn](https://classic.yarnpkg.com/en/docs/install/#windows-stable) installed.
+1. Make sure you have [Yarn](https://classic.yarnpkg.com/en/docs/install/) installed.
 2. Clone this repository to a folder of your choice.
 3. Navigate to the root of the cloned repository via terminal `cd`.
 4. Run both server and client using `yarn start`.
