@@ -11,5 +11,14 @@
   },
   "dependencies": {
     "concurrently": "^5.1.0"
-  }
+  },
+  "devDependencies": {
+    "prettier": "2.0.4"
+  },
+  "version": "1.0.0",
+  "description": "An NLP bot that takes in a stock name and scrapes verified tweets to determine market sentimnet on that stock.",
+  "main": "index.js",
+  "repository": "https://github.com/chenningg/sentiments-bot",
+  "author": "Chen Ning",
+  "license": "MIT"
 }
