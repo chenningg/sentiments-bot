@@ -11,5 +11,6 @@
 ## For Development
 
 To run either the client or server only, use the following commands in the root folder.
+
 **Client:** `yarn client`
 **Server:** `yarn server`
