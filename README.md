@@ -7,3 +7,9 @@
 2. Clone this repository to a folder of your choice.
 3. Navigate to the root of the cloned repository via terminal `cd`.
 4. Run both server and client using `yarn start`.
+
+## For Development
+
+To run either the client or server only, use the following commands in the root folder.
+**Client:** `yarn client`
+**Server:** `yarn server`
