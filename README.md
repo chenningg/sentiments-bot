@@ -13,6 +13,8 @@
 To run either the client or server only, use the following commands in the root folder.
 
 <p>
-  <b>Client:</b><code>yarn client</code></br>
-  <b>Server:</b><code>yarn server</code>
+  <b>Client:</b></br>
+  <code>yarn client</code></br>
+  <b>Server:</b></br>
+  <code>yarn server</code>
 </p>
