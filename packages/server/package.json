@@ -15,6 +15,8 @@
     "reset-mac": "lsof -ti:4000 | xargs kill"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv-extended": "^2.8.0",
     "express": "^4.17.1"
   },
   "devDependencies": {
