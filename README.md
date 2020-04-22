@@ -1,6 +1,8 @@
 <h1 align="center">Sentiments Bot</h1>
 <p>A bot that accepts a stock name and searches for verified tweets on Twitter related to that stock name. It will then use NLP to determine market sentimentality about the stock to see if it's a good buying or selling point.</p>
 
+![Sentiments Bot splash screen](https://i.imgur.com/rJhtSrT.png)
+
 ## Install and Setup
 
 1. Make sure you have [Yarn](https://classic.yarnpkg.com/en/docs/install/) installed.
