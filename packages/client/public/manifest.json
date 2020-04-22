@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Sentiments Bot",
+  "name": "Sentiments Bot | Stock Sentiment Detector",
   "icons": [
     {
       "src": "favicon.ico",

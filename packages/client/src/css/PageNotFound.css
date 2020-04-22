@@ -1,0 +1,42 @@
+.page-not-found .cover-image-container {
+  background-image: url("../images/ice-background-image.jpg");
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-blend-mode: darken;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+}
+
+.page-not-found .dark-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 6px;
+  padding: 30px;
+}
+
+.page-not-found a {
+  width: 120px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: white;
+  background-color: #3e9dc9;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  display: block;
+  box-shadow: 0 4px #2b7fa6;
+  text-align: center;
+  text-decoration: none;
+}
+
+.page-not-found a:hover {
+  background-color: #4ca9d4;
+  color: white;
+  cursor: pointer;
+  margin-top: 34px;
+  margin-bottom: 6px;
+  box-shadow: none;
+}

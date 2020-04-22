@@ -1,0 +1,52 @@
+.home .cover-image-container {
+  background-image: url("../images/ice-background-image.jpg");
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-blend-mode: darken;
+  min-height: 100vh;
+}
+
+.home h1,
+.home p {
+  text-align: center;
+}
+
+.home .app-content {
+  min-height: 100vh;
+}
+
+.home .title {
+  color: white;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  font-size: 2.4rem;
+}
+
+.home .search-container {
+  max-width: 600px;
+  width: 100%;
+  background-color: #232629;
+  color: black;
+  border-radius: 6px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.home form {
+  width: 100%;
+  height: 160px;
+  padding: 30px;
+}
+
+.home form button {
+  width: 100%;
+}
+
+.home .app-content a {
+  position: absolute;
+  bottom: 20px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.home .app-content a:hover {
+  color: #26a8ed;
+}
