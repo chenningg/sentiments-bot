@@ -1,6 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import dotEnvExtended from "dotenv-extended";
+import mongoose from "mongoose";
 
 import router from "./routes/v1/api";
 
