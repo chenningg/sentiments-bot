@@ -1,4 +1,5 @@
 import express from "express";
+import { User } from "../models/User";
 
 // Set up router for express to route requests
 const router = express.Router();

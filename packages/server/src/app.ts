@@ -12,6 +12,8 @@ const config = dotEnvExtended.load();
 const port = config.PORT || 4000; // Default to port 4000
 
 // Initialize mongoDB connection
+mongoose.connect(config.MONGO_HOST);
+mongoose.Promise = global.Promise; // Make mongoose promise same as javascript one
 // const MongoClient = require("mongodb").MongoClient;
 // const uri =
 //   "mongodb+srv://atlas:<password>@sentiments-bot-rb8cl.gcp.mongodb.net/test?retryWrites=true&w=majority";
