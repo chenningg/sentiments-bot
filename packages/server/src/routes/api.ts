@@ -1,5 +1,5 @@
 import express from "express";
-import { User } from "../models/User";
+import { User } from "../models/user";
 
 // Set up router for express to route requests
 const router = express.Router();
@@ -14,8 +14,7 @@ router.get("/users", (req, res) => {
 
 // Add a new user to the database
 router.post("/users", (req, res) => {
-  console.log(req.body);
-  res.send({ type: "POST", data: "/users" });
+  User.create(req.body).then((user) => res.send(user));
 });
 
 // Update a user in the database
