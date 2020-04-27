@@ -12,7 +12,11 @@
     "start": "concurrently --kill-others-on-fail \"yarn server-start\"  \"yarn client\"",
     "client-build": "yarn workspace client build",
     "server-build": "yarn workspace server build",
-    "build": "yarn server-build && yarn client-build"
+    "build": "yarn server-build && yarn client-build",
+    "check-win": "yarn workspace server check-win",
+    "reset-win": "yarn workspace server reset-win",
+    "reset-mac": "yarn workspace server reset-mac",
+    "commands": "echo Commands:\nstart\ndev\nbuild\ncheck-win\nreset-win\nreset-mac"
   },
   "dependencies": {
     "concurrently": "^5.1.0"

@@ -2,37 +2,28 @@ import express from "express";
 import bodyParser from "body-parser";
 import dotEnvExtended from "dotenv-extended";
 
-// Initialize express server, port and environment variables
+import router from "./routes/v1/api";
+
+// Initialize express server, port, routes and environment variables
 const app = express();
 const config = dotEnvExtended.load();
-const port = config.SERVER_PORT || 4000; // Default to port 4000
 
-// Setup middleware to parse POST requests for url html data and JSON
-const jsonParser = bodyParser.json();
-const urlencodedParser = bodyParser.urlencoded({ extended: false });
+const port = config.PORT || 4000; // Default to port 4000
 
-// ====== Routes ======
+// Initialize mongoDB connection
+// const MongoClient = require("mongodb").MongoClient;
+// const uri =
+//   "mongodb+srv://atlas:<password>@sentiments-bot-rb8cl.gcp.mongodb.net/test?retryWrites=true&w=majority";
+// const client = new MongoClient(uri, { useNewUrlParser: true });
+// client.connect((err) => {
+//   const collection = client.db("test").collection("devices");
+//   // perform actions on the collection object
+//   client.close();
+// });
 
-// Index and home
-app.get("/", (req, res) => {
-  res.send("Hello, this is a test!!!");
-});
-
-app.get("/home", (req, res) => {
-  res.send("Hello, this is a test!!!");
-});
-
-// Test
-app.get("/api/v1/test", (req, res) => {
-  res.send({
-    weather: "rainy.",
-  });
-});
-
-// Stock page
-app.get("/stock/:name", (req, res) => {
-  res.send(`Finding stock sentiments for ${req.params.name}`);
-});
+// Setup middleware
+app.use(bodyParser.json()); // Parse JSON requests in body
+app.use("/api/v1", router);
 
 // Start server, listening on provided port (default 4000)
 app.listen(port, () => {
