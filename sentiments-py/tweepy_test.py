@@ -1,17 +1,16 @@
 import tweepy
 import csv
+import os
+from dotenv import load_dotenv
 
-consumer_key = "9gTvndP8c0qRFJlnJfWmVScj3"
-consumer_secret = "2jt3deq3Uenr9pO6DH0CB6cEWd8UVGH7D0fuZ8GBjp7ukhPvB1"
+# Load environment variables
+load_dotenv()
 
-auth = tweepy.AppAuthHandler(consumer_key, consumer_secret)
-# Uncomment if need to access Twitter account
-# auth.set_access_token(access_token, access_token_secret)
-
-# Access Twitter api
+# Access Twitter API
+auth = tweepy.AppAuthHandler(os.getenv("TWITTER_KEY"), os.getenv("TWITTER_SECRET"))
 api = tweepy.API(auth)
 
-tweets = tweepy.Cursor(api.search, q='tesla').items(200)
+tweets = tweepy.Cursor(api.search, q='tesla').items(5000)
 
 with open('tweets.csv', mode='w', newline='', encoding='utf-8') as tweets_file:
     tweets_writer = csv.writer(tweets_file, delimiter=',')
